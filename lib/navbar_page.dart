@@ -39,32 +39,47 @@ class _NavBarState extends State<NavBar> {
           _paginas[paginaActual],
         ],
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        onTap: (index) {
-          setState(() {
-            paginaActual = index;
-          });
-        },
-        currentIndex: paginaActual,
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: "Inicio",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.swap_horiz),
-            label: "Transferencias",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.analytics_outlined),
-            label: "Analisis",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.account_circle),
-            label: "Cuenta",
-          ),
-        ],
+      bottomNavigationBar: Container(
+        decoration: BoxDecoration(
+          boxShadow: [
+            BoxShadow(
+              color: Color(0xFFf8dbcf),
+              blurRadius: 20,
+              spreadRadius: 10,
+              offset: Offset(0, -10),
+            ),
+          ],
+        ),
+        child: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
+          fixedColor: const Color(0xFF888787),
+          unselectedItemColor: const Color(0xFFCACACA),
+          backgroundColor: const Color(0xFFF7F0ED),
+          onTap: (index) {
+            setState(() {
+              paginaActual = index;
+            });
+          },
+          currentIndex: paginaActual,
+          items: const [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home_outlined),
+              label: "Inicio",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.swap_horiz),
+              label: "Transferencias",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.donut_small_outlined),
+              label: "Analisis",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.account_circle_outlined),
+              label: "Cuenta",
+            ),
+          ],
+        ),
       ),
     );
   }
