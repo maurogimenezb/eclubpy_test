@@ -10,13 +10,6 @@ class BillsPage extends StatefulWidget {
 class _BillsPageState extends State<BillsPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Gastos'),
-      ),
-      body: Container(
-        color: const Color(0xFFF7F0ED),
-      ),
-    );
+    return Container();
   }
 }
