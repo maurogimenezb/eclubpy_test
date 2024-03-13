@@ -294,12 +294,12 @@ class _BillsPageState extends State<BillsPage> {
   List<PieChartSectionData> getSections() {
     List<IconData> icons = [
       Icons.home,
-      Icons.home,
+      Icons.school_outlined,
       Icons.food_bank,
-      Icons.shopping_bag,
       Icons.airplane_ticket,
+      Icons.shopping_bag,
       Icons.sports_soccer,
-      Icons.school,
+      Icons.restaurant_menu_outlined,
     ];
 
     return List.generate(
