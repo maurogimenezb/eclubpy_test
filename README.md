@@ -1,6 +1,14 @@
 # Generación de APK Android - eClub Test
 Este repositorio contiene los archivos y configuraciones necesarias para generar una APK Android a partir de mi proyecto Flutter.
 
+<br />
+<div>
+  &emsp;&emsp;&emsp;
+  <img src="https://github.com/maurogimenezb/eclubpy_test/blob/main/images/Screenshot_1710305805.png" alt="Light theme" width="330">
+  &emsp;&emsp;&emsp;&emsp;
+  <img src="https://github.com/maurogimenezb/eclubpy_test/blob/main/images/Screenshot_1710305815.png" alt="Dark theme" width="320">  
+</div>
+<br />
 
 # Requisitos Previos
 
