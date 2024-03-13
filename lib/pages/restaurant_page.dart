@@ -1,3 +1,4 @@
+import 'package:eclubpy_test/pages/movements_page.dart';
 import 'package:flutter/material.dart';
 import 'package:fl_chart/fl_chart.dart';
 
@@ -210,87 +211,100 @@ class _RestaurantPageState extends State<RestaurantPage> {
             ),
           ),
           Expanded(
-              child: ListView.builder(
-                  itemCount: titles.length,
-                  itemBuilder: (context, index) {
-                    return Padding(
-                        padding: const EdgeInsets.only(bottom: 8.0),
-                        child: ListTile(
-                          leading: Container(
-                            width: 46,
-                            height: 46,
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              color: Colors.white,
-                            ),
-                            child: Center(
-                              child: Icon(
-                                icons[index],
-                                color: iconColors[index],
+            child: ListView.builder(
+              itemCount: titles.length,
+              itemBuilder: (context, index) {
+                return Padding(
+                  padding: const EdgeInsets.only(bottom: 8.0),
+                  child: ListTile(
+                    leading: Container(
+                      width: 46,
+                      height: 46,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: Colors.white,
+                      ),
+                      child: Center(
+                        child: Icon(
+                          icons[index],
+                          color: iconColors[index],
+                        ),
+                      ),
+                    ),
+                    title: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const MovementsPage(),
                               ),
-                            ),
-                          ),
-                          title: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            );
+                          },
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    titles[index],
-                                    style: TextStyle(
-                                      fontFamily: 'Poppins',
-                                      fontSize: 12.0,
-                                      fontWeight: FontWeight.w600,
-                                      height: 1.167,
-                                      letterSpacing: 0.0,
-                                      color: Colors.black,
-                                    ),
-                                  ),
-                                  Text(
-                                    subtitles[index],
-                                    style: TextStyle(
-                                      fontFamily: 'Poppins',
-                                      fontSize: 12.0,
-                                      fontWeight: FontWeight.w600,
-                                      height: 1.167,
-                                      letterSpacing: 0.0,
-                                      color: Colors.grey,
-                                    ),
-                                  ),
-                                ],
+                              Text(
+                                titles[index],
+                                style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                  fontSize: 12.0,
+                                  fontWeight: FontWeight.w600,
+                                  height: 1.167,
+                                  letterSpacing: 0.0,
+                                  color: Colors.black,
+                                ),
                               ),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.end,
-                                children: [
-                                  Text(
-                                    additionalTitles[index],
-                                    style: TextStyle(
-                                      fontFamily: 'Poppins',
-                                      fontSize: 12.0,
-                                      fontWeight: FontWeight.w600,
-                                      height: 1.167,
-                                      letterSpacing: 0.0,
-                                      color: Colors.black,
-                                    ),
-                                  ),
-                                  Text(
-                                    additionalSubtitles[index],
-                                    style: TextStyle(
-                                      fontFamily: 'Poppins',
-                                      fontSize: 12.0,
-                                      fontWeight: FontWeight.w600,
-                                      height: 1.167,
-                                      letterSpacing: 0.0,
-                                      color: Colors.grey,
-                                    ),
-                                  ),
-                                ],
+                              Text(
+                                subtitles[index],
+                                style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                  fontSize: 12.0,
+                                  fontWeight: FontWeight.w600,
+                                  height: 1.167,
+                                  letterSpacing: 0.0,
+                                  color: Colors.grey,
+                                ),
                               ),
                             ],
                           ),
-                        ));
-                  })),
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            Text(
+                              additionalTitles[index],
+                              style: TextStyle(
+                                fontFamily: 'Poppins',
+                                fontSize: 12.0,
+                                fontWeight: FontWeight.w600,
+                                height: 1.167,
+                                letterSpacing: 0.0,
+                                color: Colors.black,
+                              ),
+                            ),
+                            Text(
+                              additionalSubtitles[index],
+                              style: TextStyle(
+                                fontFamily: 'Poppins',
+                                fontSize: 12.0,
+                                fontWeight: FontWeight.w600,
+                                height: 1.167,
+                                letterSpacing: 0.0,
+                                color: Colors.grey,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                );
+              },
+            ),
+          ),
           Center(
             child: Container(
               width: 315,
