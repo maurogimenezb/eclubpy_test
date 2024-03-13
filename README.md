@@ -1,16 +1,37 @@
-# eclubpy_test
+# Generación de APK Android - eClub Test
+Este repositorio contiene los archivos y configuraciones necesarias para generar una APK Android a partir de mi proyecto Flutter.
 
-A new Flutter project.
 
-## Getting Started
+# Requisitos Previos
 
-This project is a starting point for a Flutter application.
+Tener Flutter y Visual Studio Code instalados en tu sistema.
 
-A few resources to get you started if this is your first Flutter project:
+# Pasos para Generar la APK
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Primero clonar el repositorio del proyecto 
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+git clone https://github.com/maurogimenezb/eclubpy_test.git
+```
+
+Una vez que tengas el proyecto hay que descargar todas las depedencias necesarias, esto ya dentro del proyecto
+
+```
+flutter pub get
+```
+
+Luego de eso podes generar la apk 
+
+```
+flutter build apk
+```
+
+Esto generará un archivo APK en la ruta build/app/outputs/flutter-apk/app-release.apk dentro del proyecto
+
+# Instalar la APK
+
+- Conecta tu dispositivo Android al ordenador mediante un cable USB.
+- Abre Android Studio y selecciona tu dispositivo como destino de depuración.
+- Arrastra y suelta el archivo APK generado en tu dispositivo.
+- En tu dispositivo, habilita la instalación de aplicaciones desde fuentes desconocidas si aún no lo has hecho.
+- Abre el archivo APK en tu dispositivo y sigue las instrucciones para instalar la aplicación.
