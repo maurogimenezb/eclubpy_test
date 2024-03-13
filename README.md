@@ -4,9 +4,15 @@ Este repositorio contiene los archivos y configuraciones necesarias para generar
 <br />
 <div>
   &emsp;&emsp;&emsp;
-  <img src="https://github.com/maurogimenezb/eclubpy_test/blob/main/images/Screenshot_1710305805.png" alt="Light theme" width="330">
+  <img src="https://github.com/maurogimenezb/eclubpy_test/blob/main/images/Screenshot_1710305805.png" alt="Light theme" width="300">
   &emsp;&emsp;&emsp;&emsp;
-  <img src="https://github.com/maurogimenezb/eclubpy_test/blob/main/images/Screenshot_1710305815.png" alt="Dark theme" width="320">  
+  <img src="https://github.com/maurogimenezb/eclubpy_test/blob/main/images/Screenshot_1710305815.png" alt="Dark theme" width="300">  
+   &emsp;&emsp;&emsp;&emsp;
+  <img src="https://github.com/maurogimenezb/eclubpy_test/blob/main/images/Screenshot_1710305825.png" alt="Dark theme" width="300">  
+   &emsp;&emsp;&emsp;&emsp;
+  <img src="https://github.com/maurogimenezb/eclubpy_test/blob/main/images/Screenshot_1710305842.png" alt="Dark theme" width="300">  
+   &emsp;&emsp;&emsp;&emsp;
+  <img src="https://github.com/maurogimenezb/eclubpy_test/blob/main/images/Screenshot_1710305854.png" alt="Dark theme" width="300">  
 </div>
 <br />
 
