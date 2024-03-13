@@ -32,10 +32,10 @@ class _AnalysisPageState extends State<AnalysisPage> {
         centerTitle: true,
         actions: [
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.only(right: 18.0),
             child: Container(
-              width: 40,
-              height: 40,
+              width: 46,
+              height: 46,
               decoration: BoxDecoration(
                 border: Border.all(
                   color: Color(0xFFA6A6A6),
